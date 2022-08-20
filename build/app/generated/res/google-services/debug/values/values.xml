@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">811948627856-1naa71ai0b10bafemuh2tq8adb5jgp0i.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">811948627856</string>
+    <string name="google_api_key" translatable="false">AIzaSyA0Zl2OOBxSw2uBO_p4rxL-zrCX0IWD0I8</string>
+    <string name="google_app_id" translatable="false">1:811948627856:android:f01390325c79ee54110515</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA0Zl2OOBxSw2uBO_p4rxL-zrCX0IWD0I8</string>
+    <string name="google_storage_bucket" translatable="false">redingapp.appspot.com</string>
+    <string name="project_id" translatable="false">redingapp</string>
+</resources>

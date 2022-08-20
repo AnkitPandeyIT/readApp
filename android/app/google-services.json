@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811948627856",
+    "project_id": "redingapp",
+    "storage_bucket": "redingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811948627856:android:f01390325c79ee54110515",
+        "android_client_info": {
+          "package_name": "com.example.reading_reparo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811948627856-1naa71ai0b10bafemuh2tq8adb5jgp0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Zl2OOBxSw2uBO_p4rxL-zrCX0IWD0I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811948627856-1naa71ai0b10bafemuh2tq8adb5jgp0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
