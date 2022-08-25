@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\19fea4fb28dedd992824e13cc158e7a1\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ko\\values.xml",

@@ -13,34 +13,34 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:4:5-66
-15-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:4:22-64
+15-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:4:5-66
+15-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:4:22-64
 16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-16-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:3:5-70
-16-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:3:22-68
+16-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:3:5-70
+16-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:3:22-68
 17    <uses-permission android:name="android.permission.BLUETOOTH" />
-17-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:5:5-67
-17-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:5:22-65
+17-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:5:5-67
+17-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:5:22-65
 18    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-18-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:6:5-73
-18-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:6:22-71
+18-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:6:5-73
+18-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:6:22-71
 19    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-19-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:7:5-75
-19-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:7:22-73
+19-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:7:5-75
+19-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:7:22-73
 20
 21    <queries>
-21-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:8:5-12:15
+21-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:8:5-12:15
 22        <intent>
-22-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:9:9-11:18
+22-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:9:9-11:18
 23            <action android:name="android.speech.RecognitionService" />
-23-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:10:13-72
-23-->E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android\app\src\main\AndroidManifest.xml:10:21-69
+23-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:10:13-72
+23-->F:\sih\readingReparoFirst\android\app\src\main\AndroidManifest.xml:10:21-69
 24        </intent>
 25        <intent>
-25-->[:flutter_tts] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+25-->[:flutter_tts] F:\sih\readingReparoFirst\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
 26            <action android:name="android.intent.action.TTS_SERVICE" />
-26-->[:flutter_tts] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
-26-->[:flutter_tts] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
+26-->[:flutter_tts] F:\sih\readingReparoFirst\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
+26-->[:flutter_tts] F:\sih\readingReparoFirst\build\flutter_tts\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
 27        </intent>
 28    </queries>
 29
@@ -89,31 +89,31 @@
 69            android:value="2" />
 70
 71        <service
-71-->[:firebase_auth] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+71-->[:firebase_auth] F:\sih\readingReparoFirst\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 72            android:name="com.google.firebase.components.ComponentDiscoveryService"
-72-->[:firebase_auth] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+72-->[:firebase_auth] F:\sih\readingReparoFirst\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 73            android:directBootAware="true"
 73-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Ankit Pandey\.gradle\caches\transforms-3\fccaa6a289edc53f66333a729d5bb147\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
 74            android:exported="false" >
 74-->[com.google.firebase:firebase-auth:21.0.7] C:\Users\Ankit Pandey\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:66:13-37
 75            <meta-data
-75-->[:firebase_auth] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+75-->[:firebase_auth] F:\sih\readingReparoFirst\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 76                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-76-->[:firebase_auth] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+76-->[:firebase_auth] F:\sih\readingReparoFirst\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[:firebase_auth] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+77-->[:firebase_auth] F:\sih\readingReparoFirst\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 78            <meta-data
-78-->[:cloud_firestore] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+78-->[:cloud_firestore] F:\sih\readingReparoFirst\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-79-->[:cloud_firestore] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+79-->[:cloud_firestore] F:\sih\readingReparoFirst\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:cloud_firestore] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+80-->[:cloud_firestore] F:\sih\readingReparoFirst\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 81            <meta-data
-81-->[:firebase_core] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+81-->[:firebase_core] F:\sih\readingReparoFirst\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-82-->[:firebase_core] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+82-->[:firebase_core] F:\sih\readingReparoFirst\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[:firebase_core] E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+83-->[:firebase_core] F:\sih\readingReparoFirst\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 84            <meta-data
 84-->[com.google.firebase:firebase-auth:21.0.7] C:\Users\Ankit Pandey\.gradle\caches\transforms-3\6b415a3bc2b441250bf51af87084b635\transformed\jetified-firebase-auth-21.0.7\AndroidManifest.xml:67:13-69:85
 85                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

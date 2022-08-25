@@ -1,8 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "F:\\sih\\readingReparoFirst\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,707",
+                        "endColumns": "143,81,103,108,119,92,69",
+                        "endOffsets": "194,276,380,489,609,702,772"
+                    },
+                    "to": {
+                        "startLines": "126,130,131,132,133,134,135",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8973,9332,9414,9518,9627,9747,9840",
+                        "endColumns": "143,81,103,108,119,92,69",
+                        "endOffsets": "9112,9409,9513,9622,9742,9835,9905"
+                    }
+                },
+                {
+                    "source": "F:\\sih\\readingReparoFirst\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "137,142",
+                        "startColumns": "4,4",
+                        "startOffsets": "9981,10289",
+                        "endLines": "141,144",
+                        "endColumns": "12,12",
+                        "endOffsets": "10284,10453"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\542a859793ec57d6a4d40865c7efc6d9\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",
                     "from": {
@@ -37,42 +73,6 @@
                         "startOffsets": "661,719,785,848,1713,1784,8905,9117,9184,9263",
                         "endColumns": "57,65,62,61,70,71,67,66,78,68",
                         "endOffsets": "714,780,843,905,1779,1851,8968,9179,9258,9327"
-                    }
-                },
-                {
-                    "source": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,707",
-                        "endColumns": "143,81,103,108,119,92,69",
-                        "endOffsets": "194,276,380,489,609,702,772"
-                    },
-                    "to": {
-                        "startLines": "126,130,131,132,133,134,135",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8973,9332,9414,9518,9627,9747,9840",
-                        "endColumns": "143,81,103,108,119,92,69",
-                        "endOffsets": "9112,9409,9513,9622,9742,9835,9905"
-                    }
-                },
-                {
-                    "source": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "137,142",
-                        "startColumns": "4,4",
-                        "startOffsets": "9981,10289",
-                        "endLines": "141,144",
-                        "endColumns": "12,12",
-                        "endOffsets": "10284,10453"
                     }
                 },
                 {

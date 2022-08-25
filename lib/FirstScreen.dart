@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import 'package:reading_reparo/data/login.dart';
+import 'package:reading_reparo/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'SecondScreen.dart';
 

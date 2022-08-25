@@ -16,7 +16,9 @@ import 'data/bookData.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'firebasefun.dart';
-import 'package:reading_reparo/FeedbackScreen.dart';
+import 'selfAssessment.dart';
+
+import 'selfAssessment.dart';
 
 class SecondRoute extends StatelessWidget {
   static late String langID;
@@ -301,11 +303,35 @@ class SecondRoute extends StatelessWidget {
                             ));
                       }),
                     )),
-                IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward)),
+                SizedBox(height: 15,),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: GestureDetector(
+                    onTap:(){
+                      Navigator.push(
+                          context, MaterialPageRoute(builder: (context) => Quiz()));
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                          color: Colors.blue[800],
+                          borderRadius: BorderRadius.circular(12)),
+
+                      child: Center(
+                        child: Text('Take A Self Assesment Test', style: TextStyle(color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             )));
   }
 }
+
 
 
 

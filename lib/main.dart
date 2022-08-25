@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               ? 'walkthrough'
               : 'home',
       routes: {
-        'walkthrough': (context) => WalkThroughScreen(),
+        'walkthrough': (context) => FirstScreen(),
         'home': (context) => FirstScreen()
       },
     );
