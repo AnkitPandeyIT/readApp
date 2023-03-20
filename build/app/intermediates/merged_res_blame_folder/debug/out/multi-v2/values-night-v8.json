@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\sih\\readingReparoFirst\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\Ankit Pandey\\Desktop\\23133\\(Primary) Mobile-App Code\\Mobile App Code\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "F:\\sih\\readingReparoFirst\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\Ankit Pandey\\Desktop\\23133\\(Primary) Mobile-App Code\\Mobile App Code\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

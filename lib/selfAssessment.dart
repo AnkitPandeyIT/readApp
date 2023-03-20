@@ -21,7 +21,7 @@ class _QuizState extends State<Quiz> {
   bool _isFinished = false;
   stt.SpeechToText _speech = stt.SpeechToText();
   double _confidence = 1.0;
-  String _text = '';
+  String _text = 'Press the mic to start speaking';
   String langId = '';
   String savedWords = '';
   List readingText = [];
@@ -120,6 +120,7 @@ class _QuizState extends State<Quiz> {
         backgroundColor: Colors.black,
       ),
       body: Container(
+
           child: Column(children: [
         AnimatedSwitcher(
           duration: Duration(seconds: 2),
@@ -137,9 +138,12 @@ class _QuizState extends State<Quiz> {
               )),
         ),
         SizedBox(
-          height: 30,
+          height: 50,
         ),
         Container(
+          decoration: BoxDecoration(
+            color: Colors.grey.shade300
+          ),
             child: Text(
           _text,
           style: TextStyle(

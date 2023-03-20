@@ -87,37 +87,45 @@ class _LoginPageState extends State<LoginPage> {
 
                 // dropdown
                 Column(
+
                   children: [
-                    SizedBox(height: 300),
-                    DropdownButton(
+                     Container(
+                        width: 300,
+                        height: 300,
+                        child: Image.asset('assets/mascot.gif',
+                        )),
 
-                      // Initial Value
+                    SizedBox(height: 150),
 
-                      alignment: Alignment(-0.5,-0.5),
+                       DropdownButton(
+                        // Initial Value
+
+                        alignment: Alignment(-0.5,-0.5),
 
 
-                      value: dropdownvalue,
+                        value: dropdownvalue,
 
 
-                      // Down Arrow Icon
-                      icon: const Icon(Icons.keyboard_arrow_down),
+                        // Down Arrow Icon
+                        icon: const Icon(Icons.keyboard_arrow_down),
 
-                      // Array list of items
-                      items: items.map((String items) {
-                        return DropdownMenuItem(
-                          value: items,
-                          child: Text(items),
+                        // Array list of items
+                        items: items.map((String items) {
+                          return DropdownMenuItem(
+                            value: items,
+                            child: Text(items),
 
-                        );
-                      }).toList(),
-                      // After selecting the desired option,it will
-                      // change button value to selected value
-                      onChanged: (String? newValue) {
-                        setState(() {
-                          dropdownvalue = newValue!;
-                        });
-                      },
-                    ),
+                          );
+                        }).toList(),
+                        // After selecting the desired option,it will
+                        // change button value to selected value
+                        onChanged: (String? newValue) {
+                          setState(() {
+                            dropdownvalue = newValue!;
+                          });
+                        },
+                      ),
+
                     SizedBox(height: 30,),
 
 

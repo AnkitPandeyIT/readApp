@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\flutter\release\libs.jar"
-      resolved="__local_aars__:E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
+      name="__local_aars__:F:\sih\readingReparoFirst\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
+      jars="F:\sih\readingReparoFirst\build\app\intermediates\flutter\release\libs.jar"
+      resolved="__local_aars__:F:\sih\readingReparoFirst\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:shared_preferences_android::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\shared_preferences_android\.transforms\afadf526465043a3fe5eb0378963051b\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:shared_preferences_android::release"
+      jars="F:\sih\readingReparoFirst\build\shared_preferences_android\.transforms\730ea4049bd627dbef05bde745c13d74\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\shared_preferences_android\.transforms\afadf526465043a3fe5eb0378963051b\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\shared_preferences_android\.transforms\730ea4049bd627dbef05bde745c13d74\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:firebase_auth::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\.transforms\fcce85afa081b4dec0f5fc8659ec63c0\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:firebase_auth::release"
+      jars="F:\sih\readingReparoFirst\build\firebase_auth\.transforms\fe090a936f9be866e0adab918de1ba1d\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.auth:firebase_auth:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_auth\.transforms\fcce85afa081b4dec0f5fc8659ec63c0\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\firebase_auth\.transforms\fe090a936f9be866e0adab918de1ba1d\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:cloud_firestore::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\cloud_firestore\.transforms\6f91387dbb12a213f7c560f5ca20787e\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:cloud_firestore::release"
+      jars="F:\sih\readingReparoFirst\build\cloud_firestore\.transforms\c5ecb62f09b0ba7a7f1fbd95ab54fd30\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.cloudfirestore:cloud_firestore:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\cloud_firestore\.transforms\6f91387dbb12a213f7c560f5ca20787e\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\cloud_firestore\.transforms\c5ecb62f09b0ba7a7f1fbd95ab54fd30\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:firebase_core::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_core\.transforms\5f93be87fc7b8932b4c45f3f9c99ac55\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:firebase_core::release"
+      jars="F:\sih\readingReparoFirst\build\firebase_core\.transforms\b5f89eea767b7a48899fff38709e3fb5\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.core:firebase_core:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\firebase_core\.transforms\5f93be87fc7b8932b4c45f3f9c99ac55\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\firebase_core\.transforms\b5f89eea767b7a48899fff38709e3fb5\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -56,10 +56,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:speech_to_text::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\speech_to_text\.transforms\56b69dd555763de4e3f005f97575b6c1\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:speech_to_text::release"
+      jars="F:\sih\readingReparoFirst\build\speech_to_text\.transforms\d23cadfc3ad61006ddf022f857ec847c\transformed\out\jars\classes.jar"
       resolved="com.csdcorp.speech_to_text:speech_to_text:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\speech_to_text\.transforms\56b69dd555763de4e3f005f97575b6c1\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\speech_to_text\.transforms\d23cadfc3ad61006ddf022f857ec847c\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -69,10 +69,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:fluttertoast::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\fluttertoast\.transforms\769480b1b893232a449cb1bf5f2816ad\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:fluttertoast::release"
+      jars="F:\sih\readingReparoFirst\build\fluttertoast\.transforms\e4de0cb23f2ac00c29ca101bb657c162\transformed\out\jars\classes.jar"
       resolved="com.example.FlutterToast:fluttertoast:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\fluttertoast\.transforms\769480b1b893232a449cb1bf5f2816ad\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\fluttertoast\.transforms\e4de0cb23f2ac00c29ca101bb657c162\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -82,10 +82,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\android@@:flutter_tts::release"
-      jars="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\flutter_tts\.transforms\b57edccae4e5efad96bc4666a9079368\transformed\out\jars\classes.jar"
+      name="F:\sih\readingReparoFirst\android@@:flutter_tts::release"
+      jars="F:\sih\readingReparoFirst\build\flutter_tts\.transforms\c968f85a528142eea310c04c0af59230\transformed\out\jars\classes.jar"
       resolved="com.tundralabs.fluttertts:flutter_tts:unspecified"
-      folder="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\flutter_tts\.transforms\b57edccae4e5efad96bc4666a9079368\transformed\out"
+      folder="F:\sih\readingReparoFirst\build\flutter_tts\.transforms\c968f85a528142eea310c04c0af59230\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

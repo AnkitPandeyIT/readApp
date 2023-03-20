@@ -63,7 +63,18 @@ class LibraryRoute extends StatelessWidget {
             title: Text('Library'),
             backgroundColor: Colors.black,
           ),
-          body: GridView.builder(
+          body: Container(
+
+              decoration: BoxDecoration(
+
+                  image: DecorationImage(
+
+                    image: AssetImage('assets/appbg2.jpg'),
+                    fit: BoxFit.fill,
+                  )
+              ),
+
+              child : GridView.builder(
             itemCount: langBooks.length,
             gridDelegate:
                 SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
@@ -93,7 +104,7 @@ class LibraryRoute extends StatelessWidget {
                           image: AssetImage(
                               langBooks.values.elementAt(index)[2]))));
             },
-          ),
+          )),
         ));
   }
 }

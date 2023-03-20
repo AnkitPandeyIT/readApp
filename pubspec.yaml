@@ -43,9 +43,7 @@ dependencies:
   firebase_auth: ^3.6.2
   cloud_firestore: ^3.1.13
 
-
   fluttertoast: ^8.0.9
-
   speech_to_text : ^5.6.0
   highlight_text : ^1.4.0
   avatar_glow : ^2.0.2
@@ -56,10 +54,14 @@ dependencies:
   shared_preferences: ^2.0.6
   getwidget: ^3.0.1
   slide_to_act: ^2.0.1
+  flip_card: ^0.7.0
+
 
 dev_dependencies:
+
   flutter_test:
     sdk: flutter
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -81,36 +83,40 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  - assets/logo/logo.png
-
+   - assets/animalspics/.
+   - assets/logo/logo.png
+   - assets/football-pitch.png
   #walkthrough slides
-  - assets/walkthrough/slide-1.png
-  - assets/walkthrough/slide-2.png
-  - assets/walkthrough/slide-3.png
+   - assets/walkthrough/slide-1.png
+   - assets/walkthrough/slide-2.png
+   - assets/walkthrough/slide-3.png
+   - assets/mascot.gif
+   - assets/appbg.jpg
+   - assets/appbg2.jpg
 
   
 
   # book covers
-  - assets/covers/sherlock-holmes-cover.png
-  - assets/covers/guilliver-travels.jpg
-  - assets/covers/jungle-book-cover.jpg
-  - assets/covers/panchtantra-cover.jpg
+   - assets/covers/sherlock-holmes-cover.png
+   - assets/covers/guilliver-travels.jpg
+   - assets/covers/jungle-book-cover.jpg
+   - assets/covers/panchtantra-cover.jpg
   
   #book text
 
-  - assets/book_data/english/
-  - assets/book_data/hindi/
-  - assets/book_data/tamil/
-  - assets/book_data/telugu/
-  - assets/covers/
+   - assets/book_data/english/
+   - assets/book_data/hindi/
+   - assets/book_data/tamil/
+   - assets/book_data/telugu/
+   - assets/covers/
 
   # reading plans
 
-  - assets/reading_plans/
+   - assets/reading_plans/
 
 
   #rewards 
-  - assets/rewards/
+   - assets/rewards/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

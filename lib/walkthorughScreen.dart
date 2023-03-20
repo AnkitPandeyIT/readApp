@@ -10,6 +10,7 @@ class WalkThroughScreen extends StatefulWidget {
 }
 
 Map<String, String> walkThroughImage = {
+  'Hello! I am Reparo Agent':'assets/mascot.gif',
   'Improve your reading the easy way': 'assets/walkthrough/slide-1.png',
   'We used the best tools for a seamless experience':
       'assets/walkthrough/slide-2.png',

@@ -4,9 +4,9 @@
     minSdkVersion="21"
     targetSdkVersion="31"
     shrinking="true"
-    mergedManifest="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
-    proguardFiles="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.1.2;C:\src\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
-    partialResultsDir="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\lint_vital_partial_results\release\out">
+    mergedManifest="F:\sih\readingReparoFirst\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
+    proguardFiles="F:\sih\readingReparoFirst\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.1.2;C:\src\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
+    partialResultsDir="F:\sih\readingReparoFirst\build\app\intermediates\lint_vital_partial_results\release\out">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -29,9 +29,9 @@
         value="android.app.Application" />
   </manifestPlaceholders>
   <mainArtifact
-      classOutputs="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\javac\release\classes;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\tmp\kotlin-classes\release;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\kotlinToolingMetadata;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
+      classOutputs="F:\sih\readingReparoFirst\build\app\intermediates\javac\release\classes;F:\sih\readingReparoFirst\build\app\tmp\kotlin-classes\release;F:\sih\readingReparoFirst\build\app\kotlinToolingMetadata;F:\sih\readingReparoFirst\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
       applicationId="com.example.reading_reparo"
-      generatedSourceFolders="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\ap_generated_sources\release\out;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\aidl_source_output_dir\release\out;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\source\buildConfig\release;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\renderscript_source_output_dir\release\out"
-      generatedResourceFolders="E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\res\google-services\release;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\res\rs\release;E:\Android Projects\reading_reparo_flutter-master\reading_reparo_flutter-master\build\app\generated\res\resValues\release">
+      generatedSourceFolders="F:\sih\readingReparoFirst\build\app\generated\ap_generated_sources\release\out;F:\sih\readingReparoFirst\build\app\generated\aidl_source_output_dir\release\out;F:\sih\readingReparoFirst\build\app\generated\source\buildConfig\release;F:\sih\readingReparoFirst\build\app\generated\renderscript_source_output_dir\release\out"
+      generatedResourceFolders="F:\sih\readingReparoFirst\build\app\generated\res\google-services\release;F:\sih\readingReparoFirst\build\app\generated\res\rs\release;F:\sih\readingReparoFirst\build\app\generated\res\resValues\release">
   </mainArtifact>
 </variant>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\firebase_auth\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\firebase_auth\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
@@ -74,7 +74,7 @@
             ]
         },
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\firebase_auth\\intermediates\\merged_res\\release\\values-zh-rCN\\values-zh-rCN.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\firebase_auth\\intermediates\\merged_res\\release\\values-zh-rCN\\values-zh-rCN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\38e30c664341fe5bfcc1d9de04582443\\transformed\\browser-1.4.0\\res\\values-zh-rCN\\values-zh-rCN.xml",

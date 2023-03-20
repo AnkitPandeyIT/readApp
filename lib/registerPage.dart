@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:reading_reparo/ReportPage.dart';
+import 'PlayRoute.dart';
 import 'SecondScreen.dart';
 
 import 'firebasefun.dart';
 // import 'fireBaseData.dart';
 // import 'package:form_validator/form_validator.dart';
-// import 'package:reading_reparo/ReportPage.dart';
+
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -25,6 +26,54 @@ class _RegisterPageState extends State<RegisterPage> {
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
   final _nameController = TextEditingController();
+
+
+  void _showAlertDialog(context) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            backgroundColor: Colors.white,
+            shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            content: Container(
+              child: Text("Let's start the game?"),
+            ),
+
+            actions: [
+              ElevatedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> PlayRoute()));
+          },
+                  child: Text("Yes", style: TextStyle(
+          color: Colors.white
+          ),),
+                  style: ButtonStyle(
+          backgroundColor:
+          MaterialStateProperty.all(
+          Colors.blue[500])),
+
+              ),
+              ElevatedButton(onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> SecondRoute()));
+          },
+                  child: Text("No", style: TextStyle(
+          color: Colors.black
+          ),),
+          style: ButtonStyle(
+          backgroundColor:
+          MaterialStateProperty.all(
+          Colors.white),
+              )
+          )
+            ],
+
+          );
+        });
+  }
+
+
+
+
 
   @override
   void dispose() {
@@ -55,18 +104,17 @@ class _RegisterPageState extends State<RegisterPage> {
           Fluttertoast.showToast(msg: e!.message);
         });
 
+
         // add user name to detabase
         addDetails(_nameController.text.trim(), 0, 0);
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SecondRoute()));
+
+        _showAlertDialog(context);
 
       }
     }
   }
 
   final FirebaseAuth auth = FirebaseAuth.instance;
-
-
 
 
 
@@ -102,6 +150,7 @@ class _RegisterPageState extends State<RegisterPage> {
     'Student',
     'Teacher',
   ];
+
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:reading_reparo/FirstScreen.dart';
 import 'package:reading_reparo/firebasefun.dart';
+import 'package:reading_reparo/selectGamesPage.dart';
 import 'package:reading_reparo/userPreferences.dart';
+import 'firstGame.dart';
 import 'main.dart';
 import 'SpeechScreen.dart';
 import 'LibraryScreen.dart';
@@ -18,8 +20,6 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'firebasefun.dart';
 import 'selfAssessment.dart';
 
-import 'selfAssessment.dart';
-
 class SecondRoute extends StatelessWidget {
   static late String langID;
   //static late String language;
@@ -32,7 +32,6 @@ class SecondRoute extends StatelessWidget {
   var number = 0;
 
   SecondRoute({Key? key}) : super(key: key);
-
 
 
 
@@ -58,7 +57,6 @@ class SecondRoute extends StatelessWidget {
       );
     }
   }
-
 
 
   @override
@@ -102,119 +100,167 @@ class SecondRoute extends StatelessWidget {
                           shape: BoxShape.circle,
                         ),
                       ),
-                      Container(
-                        padding: EdgeInsets.only(left: 30),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rewards/coins.gif",
-                              width: 50,
-                              height: 50,
-                            ),
-                            Text (
-                              //total rewards
-                              number.toString(),
-                             style: TextStyle(fontSize: 16),
-                            )
-                          ],
-                        ),
-                      )
                     ],
                   ),
                 ),
               ),
             ),
-            body: ListView(
-              children: [
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Text(
-                    "What language do you want to learn in?",
-                    style: TextStyle(
-                        fontFamily: 'Jeju-Gothic',
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                Container(
-                    height: 130,
-                    width: MediaQuery.of(context).size.width,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: languages.length,
-                      itemBuilder: ((context, index) {
-                        return Container(
-                            width: 200,
-                            padding: EdgeInsets.all(10),
-                            child: ElevatedButton(
-                              onPressed: () {
-                                langID = languages.values.elementAt(index)[1];
-                                var language = languages.keys.elementAt(index);
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: ((context) =>
-                                            LibraryRoute(language))));
-                              },
-                              child: Text(
-                                languages.keys.elementAt(index),
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 26,
-                                  fontFamily: 'Jeju-Gothic',
-                                ),
-                              ),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      Colors.blue[800]),
-                                  shape: myRoundedBorder(20),
-                                  fixedSize: MaterialStateProperty.all(
-                                      Size(240, 130))),
-                            ));
-                      }),
-                    )),
-                SizedBox(
-                  height: 50,
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 10),
-                  child: Text("Our Picks",
+            body: Container(
+              decoration: BoxDecoration(
+
+                  image: DecorationImage(
+
+                    image: AssetImage('assets/appbg2.jpg'),
+                    fit: BoxFit.fill,
+                  )
+              ),
+              child: ListView(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    child: Text(
+                      "What language do you want to learn in?",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 26,
-                        fontFamily: 'Jeju-Gothic',
+                          fontFamily: 'Jeju-Gothic',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Container(
+                      height: 130,
+                      width: MediaQuery.of(context).size.width,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: languages.length,
+                        itemBuilder: ((context, index) {
+                          return Container(
+                              width: 200,
+                              padding: EdgeInsets.all(10),
+                              child: ElevatedButton(
+                                onPressed: () {
+                                  langID = languages.values.elementAt(index)[1];
+                                  var language = languages.keys.elementAt(index);
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: ((context) =>
+                                              LibraryRoute(language))));
+                                },
+                                child: Text(
+                                  languages.keys.elementAt(index),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 26,
+                                    fontFamily: 'Jeju-Gothic',
+                                  ),
+                                ),
+                                style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Colors.blue[800]),
+                                    shape: myRoundedBorder(20),
+                                    fixedSize: MaterialStateProperty.all(
+                                        Size(240, 130))),
+                              ));
+                        }),
                       )),
-                ),
-                Container(
-                    height: 180,
-                    width: MediaQuery.of(context).size.width,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 5,
-                      itemBuilder: ((context, index) {
-                        return Container(
-                            padding: EdgeInsets.all(2),
-                            child: IconButton(
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: 10),
+                    child: Text("Our Picks",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 26,
+                          fontFamily: 'Jeju-Gothic',
+                        )),
+                  ),
+                  Container(
+                      height: 180,
+                      width: MediaQuery.of(context).size.width,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 5,
+                        itemBuilder: ((context, index) {
+                          return Container(
+                              padding: EdgeInsets.all(2),
+                              child: IconButton(
+                                  onPressed: () async {
+                                    langID = bookData.values.elementAt(index)[1];
+                                    bookTitle = bookData.keys.elementAt(index);
+                                    coverPath =
+                                        bookData.values.elementAt(index)[2];
+                                    bookTextPath =
+                                        bookData.values.elementAt(index)[4];
+                                    bookContent =
+                                        await rootBundle.loadString(bookTextPath);
+                                    int i = Random().nextInt(
+                                            bookContent.split(" ").length) +
+                                        1;
+                                    int j;
+                                    if (i + 31 < bookContent.split(" ").length) {
+                                      j = i;
+                                    } else {
+                                      i = i - 30;
+                                      j = i;
+                                    }
+                                    while (i < 30 + j) {
+                                      contentLimit = contentLimit +
+                                          " " +
+                                          bookContent.split(" ")[i];
+                                      i++;
+                                    }
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: ((context) => SpeechScreen(
+                                                langID,
+                                                bookTitle,
+                                                coverPath,
+                                                bookContent,
+                                                contentLimit))));
+                                  },
+                                  icon: Image(
+                                      image: AssetImage(
+                                          bookData.values.elementAt(index)[2])),
+                                  iconSize: 200));
+                        }),
+                      )),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: 10),
+                    child: Text(
+                      "Difficulty Levels",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 26,
+                          fontFamily: 'Jeju-Gothic'),
+                    ),
+                  ),
+                  Container(
+                      height: 130,
+                      width: MediaQuery.of(context).size.width,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: readingPlans.length,
+                        itemBuilder: ((context, index) {
+                          return Container(
+                              width: 200,
+                              padding: EdgeInsets.all(10),
+                              child: ElevatedButton(
                                 onPressed: () async {
-                                  langID = bookData.values.elementAt(index)[1];
-                                  bookTitle = bookData.keys.elementAt(index);
-                                  coverPath =
-                                      bookData.values.elementAt(index)[2];
+                                  langID =
+                                      readingPlans.values.elementAt(index)[0];
+                                  coverPath = '';
                                   bookTextPath =
-                                      bookData.values.elementAt(index)[4];
+                                      readingPlans.values.elementAt(index)[1];
+                                  bookTitle = readingPlans.keys.elementAt(index);
                                   bookContent =
                                       await rootBundle.loadString(bookTextPath);
-                                  int i = Random().nextInt(
-                                          bookContent.split(" ").length) +
-                                      1;
-                                  int j;
-                                  if (i + 31 < bookContent.split(" ").length) {
-                                    j = i;
-                                  } else {
-                                    i = i - 30;
-                                    j = i;
-                                  }
-                                  while (i < 30 + j) {
+                                  int i = 0;
+                                  while (i < 30) {
                                     contentLimit = contentLimit +
                                         " " +
                                         bookContent.split(" ")[i];
@@ -230,104 +276,72 @@ class SecondRoute extends StatelessWidget {
                                               bookContent,
                                               contentLimit))));
                                 },
-                                icon: Image(
-                                    image: AssetImage(
-                                        bookData.values.elementAt(index)[2])),
-                                iconSize: 200));
-                      }),
-                    )),
-                SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 10),
-                  child: Text(
-                    "Reading Plans",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 26,
-                        fontFamily: 'Jeju-Gothic'),
-                  ),
-                ),
-                Container(
-                    height: 130,
-                    width: MediaQuery.of(context).size.width,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: readingPlans.length,
-                      itemBuilder: ((context, index) {
-                        return Container(
-                            width: 200,
-                            padding: EdgeInsets.all(10),
-                            child: ElevatedButton(
-                              onPressed: () async {
-                                langID =
-                                    readingPlans.values.elementAt(index)[0];
-                                coverPath = '';
-                                bookTextPath =
-                                    readingPlans.values.elementAt(index)[1];
-                                bookTitle = readingPlans.keys.elementAt(index);
-                                bookContent =
-                                    await rootBundle.loadString(bookTextPath);
-                                int i = 0;
-                                while (i < 30) {
-                                  contentLimit = contentLimit +
-                                      " " +
-                                      bookContent.split(" ")[i];
-                                  i++;
-                                }
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: ((context) => SpeechScreen(
-                                            langID,
-                                            bookTitle,
-                                            coverPath,
-                                            bookContent,
-                                            contentLimit))));
-                              },
-                              child: Text(
-                                readingPlans.keys.elementAt(index),
-                                style: TextStyle(
+                                child: Text(
+                                  readingPlans.keys.elementAt(index),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 26,
+                                    fontFamily: 'Jeju-Gothic',
+                                  ),
+                                ),
+                                style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Colors.blue[800]),
+                                    shape: myRoundedBorder(20),
+                                    fixedSize: MaterialStateProperty.all(
+                                        Size(240, 130))),
+                              ));
+                        }),
+                      )),
+                  SizedBox(height: 15,),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    child: GestureDetector(
+                      onTap:(){
+                        Navigator.push(
+                            context, MaterialPageRoute(builder: (context) => Quiz()));
+                      },
+                      child: Column(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(20),
+                            decoration: BoxDecoration(
+                                color: Colors.blue[800],
+                                borderRadius: BorderRadius.circular(12)),
+
+                            child: Center(
+                              child: Text('Take A Self Assesment Test', style: TextStyle(color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 26,
-                                  fontFamily: 'Jeju-Gothic',
+                                  fontSize: 20),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 20,),
+                          Container(
+                            padding: const EdgeInsets.all(20),
+                            decoration: BoxDecoration(
+                                color: Colors.blue[800],
+                                borderRadius: BorderRadius.circular(12)),
+
+                            child: GestureDetector(
+                              onTap: (){
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=>SelectGames()));
+                              },
+                              child: Center(
+                                child: Text('Play Games', style: TextStyle(color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20),
                                 ),
                               ),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      Colors.blue[800]),
-                                  shape: myRoundedBorder(20),
-                                  fixedSize: MaterialStateProperty.all(
-                                      Size(240, 130))),
-                            ));
-                      }),
-                    )),
-                SizedBox(height: 15,),
-
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: GestureDetector(
-                    onTap:(){
-                      Navigator.push(
-                          context, MaterialPageRoute(builder: (context) => Quiz()));
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                          color: Colors.blue[800],
-                          borderRadius: BorderRadius.circular(12)),
-
-                      child: Center(
-                        child: Text('Take A Self Assesment Test', style: TextStyle(color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                        ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             )));
   }
 }

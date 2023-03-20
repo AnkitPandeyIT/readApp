@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\firebase_auth\\intermediates\\merged_res\\release\\values-in\\values-in.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\firebase_auth\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-in\\values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\68731b1d48274e8fa6883e23f02fe3e7\\transformed\\jetified-play-services-base-17.1.0\\res\\values-in\\values.xml",
@@ -74,7 +74,7 @@
             ]
         },
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\firebase_auth\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-in\\values-in.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\firebase_auth\\intermediates\\merged_res\\release\\values-in\\values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\68731b1d48274e8fa6883e23f02fe3e7\\transformed\\jetified-play-services-base-17.1.0\\res\\values-in\\values.xml",

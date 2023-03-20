@@ -11,6 +11,7 @@ import 'package:pie_chart/pie_chart.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 import 'firebasefun.dart';
+import 'rewardScreenRoute.dart';
 
 class feedBackScreenRoute extends StatelessWidget {
   late List words;
@@ -18,6 +19,7 @@ class feedBackScreenRoute extends StatelessWidget {
   late List content;
   late List<String> wrong;
   late double correct;
+  late double score;
 
    int curruntReward =0 ;
   int reward = 0;
@@ -34,6 +36,7 @@ class feedBackScreenRoute extends StatelessWidget {
     this.wrong.removeWhere((element) => element == '  ');
     this.wrong.removeWhere((element) => element == '');
     this.correct = this.content.length - this.wrong.length.toDouble();
+    this.score = (correct / this.content.length) * 100;
   }
 
   setCurruntReward() async{
@@ -48,17 +51,12 @@ class feedBackScreenRoute extends StatelessWidget {
     await flutterTts.speak(word);
     //await flutterTts.awaitSpeakCompletion(true);
   }
-
   giveReward() {
     var score = (correct / content.length) * 100;
     if (score > 90) {
       reward = 5;
-      setCurruntReward();
-      reward = reward+curruntReward;
-      updateFields(score, reward);
       print("Rewarding " + reward.toString() + ' points');
-
-
+      userPreferences.setScore(reward);
 
       return Column(
         children: [
@@ -68,72 +66,44 @@ class feedBackScreenRoute extends StatelessWidget {
       );
     } else if (score > 80) {
       reward = 4;
-      setCurruntReward();
-      reward = reward+curruntReward;
-      updateFields(score, reward);
-
-      print("Rewarding " + reward.toString() + ' points');
-
-
       return Column(
         children: [
           Image.asset("assets/rewards/coins.gif", height: 100, width: 100),
-          Text("You have earned 4 coins")
+          Text("You have earned 5 coins")
         ],
       );
-    } else if (score > 70) {
+    } else if(score > 70){
       reward = 3;
-      setCurruntReward();
-      reward = reward+curruntReward;
-      updateFields(score, reward);
-      print("Rewarding " + reward.toString() + ' points');
-
-
       return Column(
         children: [
           Image.asset("assets/rewards/coins.gif", height: 100, width: 100),
-          Text("You have earned 3 coins")
+          Text("You have earned 5 coins")
         ],
       );
-    } else if (score > 60) {
-      reward = 2;
-      setCurruntReward();
-      reward = reward+curruntReward;
-      updateFields(score, reward);
-
-      print("Rewarding " + reward.toString() + ' points');
-
-
-
-      return Column(
-        children: [
-          Image.asset("assets/rewards/coins.gif", height: 100, width: 100),
-          Text("You have earned 2 coins")
-        ],
-      );
-    } else if (score > 50) {
-      reward = 1;
-      setCurruntReward();
-      reward = reward+curruntReward;
-      updateFields(score, reward);
-      print("Rewarding " + reward.toString() + ' points');
-
-
-      return Column(
-        children: [
-          Image.asset("assets/rewards/coins.gif", height: 100, width: 100),
-          Text("You have earned 1 coins")
-        ],
-      );
-    } else {
-      reward = 0;
-      setCurruntReward();
-      reward = reward+curruntReward;
-      updateFields(score, reward);
-      print("Rewarding " + reward.toString() + ' points');
-
-      return Text("Better luck next time!");
     }
+    else if(score > 60){
+      reward = 2;
+      return Column(
+        children: [
+          Image.asset("assets/rewards/coins.gif", height: 100, width: 100),
+          Text("You have earned 5 coins")
+        ],
+      );
+    }
+    else if(score > 40){
+      reward = 1;
+      return Column(
+        children: [
+          Image.asset("assets/rewards/coins.gif", height: 100, width: 100),
+          Text("You have earned 5 coins")
+        ],
+      );
+    }
+    else{
+      return Text('Better luck next time!');
+    }
+
+
   }
 
   // reward dialog box
@@ -179,14 +149,26 @@ class feedBackScreenRoute extends StatelessWidget {
             appBar: AppBar(
               title: Text('Assessment'),
             ),
-            body: ListView(children: [
+            body: Container(
+
+                decoration: BoxDecoration(
+
+                    image: DecorationImage(
+
+                      image: AssetImage('assets/appbg2.jpg'),
+                      fit: BoxFit.fill,
+                    )
+                ),
+
+
+                child : ListView(children: [
               Container(
                 padding: EdgeInsets.only(left: 100, top: 10),
                 height: 200,
                 width: 200,
                 child: PieChart(
                   dataMap: <String, double>{
-                    'Correct': (correct / content.length) * 100
+                    'Correct': score
                   },
                   chartType: ChartType.ring,
                   baseChartColor: Colors.grey.shade700,
@@ -241,20 +223,10 @@ class feedBackScreenRoute extends StatelessWidget {
                                           Size(240, 130)))));
                         })),
                       ))),
-              Container(
-                  padding: EdgeInsets.all(100),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      words = [];
-                      Navigator.pop(context);
-                    },
-                    child: Text("Retry?"),
-                    style: ButtonStyle(
-                        shape: myRoundedBorder(20),
-                        fixedSize: MaterialStateProperty.all(Size(50, 50))),
-                  )),
-              SlideAction(
-                onSubmit: () async {
+            Container(
+                padding: EdgeInsets.only(top:180),
+                child: SlideAction(
+                onSubmit: () {
                   _showAlertDialog(context);
                 },
                 borderRadius: 12,
@@ -267,7 +239,9 @@ class feedBackScreenRoute extends StatelessWidget {
                 ),
                 text: 'Claim reward!',
                 sliderRotate: false,
-              ),
-            ])));
+              )),
+            ])
+            )));
+
   }
 }

@@ -51,6 +51,8 @@ Map<String, List> bookData = {
     '',
     'assets/book_data/english/the-story-of-my-life.txt'
   ],
+  'Honeydew':['English','en-IN','assets/covers/honeydew-cover.jpg', '', 'assets/book_data/english/honeydew-data.txt'],
+  'Beehive':['English', 'en-IN', 'assets/covers/beehive-cover.jpg', '','assets/book_data/english/beehive-data.txt'],
   "Panchtantra": [
     "Hindi",
     "hi-IN",

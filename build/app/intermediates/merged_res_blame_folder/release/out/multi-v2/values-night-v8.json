@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "F:\\sih\\readingReparoFirst\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

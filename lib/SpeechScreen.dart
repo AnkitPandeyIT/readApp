@@ -3,6 +3,7 @@ import 'dart:math';
 import "package:flutter/material.dart";
 import 'package:reading_reparo/FeedbackScreen.dart';
 import 'package:reading_reparo/LibraryScreen.dart';
+import 'package:reading_reparo/rewardScreenRoute.dart';
 import 'main.dart';
 import 'SecondScreen.dart';
 import 'FeedbackScreen.dart';
@@ -98,7 +99,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
           return true;
         },
         child: Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.green.shade700,
           appBar: AppBar(
             title: Text(
               'Confidence : ${(_confidence * 100).toStringAsFixed(1)}' +
@@ -110,25 +111,35 @@ class _SpeechScreenState extends State<SpeechScreen> {
             ),
             backgroundColor: Colors.black,
           ),
+
           floatingActionButtonLocation:
               FloatingActionButtonLocation.centerFloat,
           floatingActionButton: AvatarGlow(
             animate: _isListening,
-            glowColor: Colors.green,
-            endRadius: 75.0,
-            duration: const Duration(microseconds: 2000),
-            repeatPauseDuration: const Duration(microseconds: 100),
-            child: FloatingActionButton(
-                onPressed: _listen,
+            glowColor: Colors.white,
+            endRadius: 40.0,
+            duration: const Duration(milliseconds: 20),
+            repeatPauseDuration: const Duration(milliseconds: 100),
+            child: Material(
+              shape: CircleBorder(),
+              child: CircleAvatar( child: FloatingActionButton(
+              onPressed: (){_listen(); },
                 child: isFinished == true
                     ? Icon(Icons.arrow_forward_sharp)
                     : Icon(_isListening ? Icons.mic : Icons.mic_none)),
-          ),
+          ))),
           body: Container(
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               child: ListView(reverse: false, children: [
                 Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+
+                      image: AssetImage('assets/football-pitch.png'),
+                      fit: BoxFit.fill,
+                    )
+                  ),
                   padding: EdgeInsets.only(top: 50),
                   child: Column(
                     children: [
@@ -146,20 +157,22 @@ class _SpeechScreenState extends State<SpeechScreen> {
                           fontSize: 22,
                           fontFamily: 'Jeju-Gothic',
                           fontWeight: FontWeight.bold,
+                          color: Colors.white,
                         ),
                         textAlign: TextAlign.center,
                       ),
                       Container(
                         decoration: BoxDecoration(
-                            color: Colors.grey.shade300,
-                            borderRadius: BorderRadius.circular(20)),
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.green.withOpacity(0.8),
+                        ),
                         padding:
                             const EdgeInsets.fromLTRB(30.0, 30.0, 30.0, 150.0),
                         child: Text(
                           contentLimit,
                           style: const TextStyle(
                               fontSize: 18,
-                              color: Colors.black,
+                              color: Colors.white,
                               fontWeight: FontWeight.w400),
                         ),
                       ),
@@ -167,17 +180,18 @@ class _SpeechScreenState extends State<SpeechScreen> {
                         height: 10,
                       ),
                       Container(
+
                           // speaking container
                           decoration: BoxDecoration(
-                            color: Colors.grey.shade300,
                             borderRadius: BorderRadius.circular(20),
+                            color: Colors.green.withOpacity(0.9),
                           ),
                           padding: const EdgeInsets.fromLTRB(
                               30.0, 30.0, 30.0, 150.0),
                           child: Text(_text,
                               style: TextStyle(
                                   fontSize: 18,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.w400))),
                     ],
                   ),
@@ -185,6 +199,7 @@ class _SpeechScreenState extends State<SpeechScreen> {
               ])),
         ));
   }
+
 
   void _listen() async {
     isFinished = false;
@@ -214,14 +229,26 @@ class _SpeechScreenState extends State<SpeechScreen> {
 
       _speech.stop();
 
-      // find difference in strings
-      Navigator.push(
+      var content = contentLimit.split(" ");
+      var wrong = content.where((element) => !savedWords.split(" ").contains(element)).toList();
+      wrong.removeWhere((element) => element == ' ');
+      wrong.removeWhere((element) => element == '  ');
+      wrong.removeWhere((element) => element == '');
+      var correct = content.length - wrong.length.toDouble();
+      var score = (correct / content.length)*100;
+
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> rewardScreen(score, savedWords.split(" "
+          ""), content, langId)));
+     /* Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => feedBackScreenRoute(
+              builder: (context) => feedBackScreenRoute("
                   savedWords.toLowerCase().split(" "),
                   contentLimit.toLowerCase().split(" "),
                   langId)));
+     */
     }
   }
+
+
 }

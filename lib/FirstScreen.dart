@@ -2,9 +2,9 @@ import "package:flutter/material.dart";
 import 'package:reading_reparo/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'SecondScreen.dart';
+import 'package:reading_reparo/PlayRoute.dart';
 
 import 'myColors.dart';
-
 
 import 'package:animated_text_kit/animated_text_kit.dart';
 
@@ -48,11 +48,10 @@ class _FirstScreenState extends State<FirstScreen>
       } else {
         print('User is signed in!');
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => SecondRoute()));
+            MaterialPageRoute(builder: (context) => LoginPage()));
       }
     });
   }
-
 
 
   // void startQuiz() {
@@ -144,7 +143,8 @@ class _FirstScreenState extends State<FirstScreen>
         Container(
           child: ElevatedButton(
             onPressed: () {
-              checkUser();
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> SecondRoute()));
+              // checkUser();
 
             },
             child: Text("Let's Start"),

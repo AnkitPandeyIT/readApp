@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\flutter_tts\\intermediates\\merged_res\\release\\values\\values.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\flutter_tts\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\542a859793ec57d6a4d40865c7efc6d9\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "outputFile": "E:\\Android Projects\\reading_reparo_flutter-master\\reading_reparo_flutter-master\\build\\flutter_tts\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "F:\\sih\\readingReparoFirst\\build\\flutter_tts\\intermediates\\merged_res\\release\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Ankit Pandey\\.gradle\\caches\\transforms-3\\542a859793ec57d6a4d40865c7efc6d9\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",
